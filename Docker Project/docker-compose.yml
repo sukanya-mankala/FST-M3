@@ -7,10 +7,10 @@ services:
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=postgres_password
   node-app:
-    #image: mankalasukanya/m3project
-    build:
-      context: .
-      dockerfile: Dockerfile.prod
+    image: mankalasukanya/m3project
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile.prod
     volumes:
       - /app/node_modules
       - ./:/app
